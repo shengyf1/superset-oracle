@@ -1,2 +1,2 @@
 #!/bin/bash
-docker run -p 8888:8088 -d sergekatzmann/superset-oracle
+docker run -p 8888:8088 --name=superset --restart=always -d wdmsyf/superset-oracle
