@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t sergekatzmann/superset-oracle .
+docker build -t wdmsyf/superset-oracle .
