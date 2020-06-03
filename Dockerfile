@@ -1,7 +1,6 @@
 #FROM python:2.7.11
 FROM 3.6.10-stretch
 
-#MAINTAINER Serge Katzmann serge.katzmann@gmail.com
 MAINTAINER CFSoft Studio <wdmsyf@yahoo.com>
 
 # Oracle instantclient
