@@ -26,8 +26,10 @@ RUN echo '/usr/local/instantclient/' | tee -a /etc/ld.so.conf.d/oracle_instant_c
 
 RUN apt-get install libaio-dev libsasl2-dev libldap2-dev -y && apt-get clean -y
 
+COPY requirements-db.txt ./
 # Install superset
-RUN pip install cx_Oracle superset
+RUN pip install -r requirements-db.txt \
+    && pip install superset
 
 # copy admin password details to /superset for fabmanager
 RUN mkdir /superset
