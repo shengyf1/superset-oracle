@@ -26,7 +26,7 @@ sudo ./build.sh
 or
 
 ```
-docker build -t sergekatzmann/superset-oracle .
+docker build -t wdmsyf/superset-oracle .
 ```
 
 Run container in daemon mode with
@@ -38,7 +38,7 @@ sudo ./run.sh
 or
 
 ```
-docker run -p 8088:8088 -d sergekatzmann/superset-oracle
+docker run -p 8088:8088 -name=superset -d wdmsyf/superset-oracle
 ```
 
 Open Superset in browser using the following link:
