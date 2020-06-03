@@ -47,5 +47,8 @@ RUN superset init
 # Load some data to play with
 RUN superset load_examples
 
+# 
+HEALTHCHECK CMD ["curl", "-f", "http://localhost:8088/health"]
+
 # Start the development web server
 CMD superset runserver -d
