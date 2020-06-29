@@ -38,14 +38,15 @@ sudo ./run.sh
 or
 
 ```
-docker run -p 8088:8088 -name=superset -d wdmsyf/superset-oracle
+docker run -p 8088:8088 -name=superset -d wdmsyf/superset-oracle:<tag>
 ```
 
 Open Superset in browser using the following link:
 ```
 http://docker_host_ip:8088
-User: admin
-Password: superset_admin
+# User: admin
+# Password: superset_admin
+用户名和密码在执行 run.sh 提示用户输入
 ```
 
 ```
@@ -54,3 +55,6 @@ Connect to running container with
 ```
 docker exec -it <container_id> /bin/bash
 ```
+
+Oracle数据库连接字符串：
+oracle://<user>:<passwd>@<ip or hostname>:1521/orcl
