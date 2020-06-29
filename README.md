@@ -48,6 +48,8 @@ User: admin
 Password: superset_admin
 ```
 
+```
+
 Connect to running container with
 ```
 docker exec -it <container_id> /bin/bash

@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t wdmsyf/superset-oracle .
+docker build --rm -t wdmsyf/superset-oracle:20200629 .
